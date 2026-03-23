@@ -84,6 +84,8 @@ function SkillList() {
                     >
                       Delete
                     </button>
+
+
                   </td>
                 </tr>
               ))}
