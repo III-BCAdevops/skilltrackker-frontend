@@ -80,7 +80,15 @@ function SkillList() {
                     <button
                       type="button"
                       className="danger"
-                      onClick={() => handleDelete(skill.id)}
+                      onClick={() => {
+                        const password = window.prompt('Enter password to delete:');
+
+                        if (password === '2825') {
+                          handleDelete(skill.id);
+                        } else {
+                          window.alert('Incorrect password!');
+                        }
+                      }}
                     >
                       Delete
                     </button>
