@@ -77,21 +77,23 @@ function SkillList() {
                     <Link className="button-link" to={`/edit/${skill.id}`}>
                       Edit
                     </Link>
-     <button
-  type="button"
-  className="danger"
-  onClick={() => {
-    const password = window.prompt("Enter password to delete:");
+                     <button
+                       type="button"
+                       className="danger"
+                       onClick={() => {
+                       const password = window.prompt("Enter password to delete:");
 
-    if (password === "2825") {
-      handleDelete(skill.id); // call only if correct
-    } else {
-      alert("Incorrect password!");
-    }
-  }}
->
-  Delete
-</button>
+                       if (password === "2825") {
+                       handleDelete(skill.id); // call only if correct
+                       } else {
+                      alert("Incorrect password!");
+                      }
+                    }}
+                    >
+              Delete
+             </button>
+
+
 
 
 
