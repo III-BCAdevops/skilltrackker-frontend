@@ -77,7 +77,7 @@ function SkillList() {
                     <Link className="button-link" to={`/edit/${skill.id}`}>
                       Edit
                     </Link>
-      <button
+                      <button
                       type="button"
                       className="danger"
                       onClick={() => handleDelete(skill.id)}
